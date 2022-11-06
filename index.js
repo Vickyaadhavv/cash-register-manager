@@ -11,16 +11,16 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
   hideMessage();
   if (billAmount.value > 0) {
     // 12
-    if (cashGiven.value > billAmount.value) {
+    if (cashGiven.value >= billAmount.value) {
       // 2022> 12 => true
       const amountToBeReturned = cashGiven.value - billAmount.value; // 2022 - 12 = 2010
       calculateChange(amountToBeReturned);
      showMessage ("Collect your balance")
-    } else if (cashGiven.value = billAmount.value) {
+    } else if (cashGiven.value < billAmount.value) {
       // 2022> 12 => true
       const amountToBeReturned = cashGiven.value - billAmount.value; // 2022 - 12 = 2010
       calculateChange(amountToBeReturned);
-     showMessage ("Thanks for shopping")
+     showMessage ("Do you wanna wash plates?")
     }
     else {
       showMessage("Do you wanna wash plates?");
