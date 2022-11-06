@@ -16,7 +16,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
       const amountToBeReturned = cashGiven.value - billAmount.value; // 2022 - 12 = 2010
       calculateChange(amountToBeReturned);
      showMessage ("Collect your balance")
-    }  if (cashGiven.value = billAmount.value) {
+    } else if (cashGiven.value = billAmount.value) {
       // 2022> 12 => true
       const amountToBeReturned = cashGiven.value - billAmount.value; // 2022 - 12 = 2010
       calculateChange(amountToBeReturned);
