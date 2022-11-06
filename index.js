@@ -15,7 +15,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
       // 2022> 12 => true
       const amountToBeReturned = cashGiven.value - billAmount.value; // 2022 - 12 = 2010
       calculateChange(amountToBeReturned);
-     
+     showMessage ("collect your balance")
     } else {
       showMessage("Do you wanna wash plates?");
     }
