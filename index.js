@@ -22,7 +22,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
       calculateChange(amountToBeReturned);
      showMessage ("Thanks for shopping")
     }
-    else if(cashGiven.value < billAmount.value) {
+    else {
       showMessage("Do you wanna wash plates?");
     }
   } else {
