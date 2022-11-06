@@ -19,10 +19,10 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
     }else {
       showMessage("Do you wanna wash plates?");
     }
-   else {
+   }else {
     showMessage("Invalid Bill Amount");
   }
-    }
+    
 });
 
 function calculateChange(amountToBeReturned) {
